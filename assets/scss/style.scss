@@ -1,0 +1,21 @@
+//import bootstrap
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Import global variables
+@import "settings";
+
+// Import styles
+@import "page-home";
+@import "header";
+@import "footer";
+@import "global";
+
+//fonts
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/MuseoSans_500-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
