@@ -1,5 +1,5 @@
-name = drupal theme
-description = Task 1 Interview Test.
+name = drupal bootstrap theme
+description = Task 2 Interview Test.
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = assets/css/style.css

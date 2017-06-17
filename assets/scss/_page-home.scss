@@ -1,332 +1,203 @@
-.b-hero{
-	.b-hero__hero-content{
-		text-align: center;
-		h1{color: $white;}
-		padding-top: 1rem;
-		p{line-height: 26px; color: $white;}
-	}
-
-	@media(max-width: $mobile-size){
-		p{margin: 0;}
-	}
+.content{
+	margin: $mobile-margin;
 }
 
-.col-4{
-	make-grid: 4;
-}
-
-.b-hero--background{
-	background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.35), 
-      rgba(0, 0, 0, 0.35)
-    ),
-    url('../images/hero.jpg'), linear-gradient(#232326, #232326, #232326, #232326, #44392F, #453D37, #635C56, #635C56, #44392F, #463D33, #524c47, #443830, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #232326, #202225);
-    background-size: cover;
-    min-height: 29rem;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-.latest-event-wrapper{
-	max-width: $global-width;
-	margin: 0 auto;
-	@media(max-width: $mobile-size)
-	{
-		min-height: 15rem;
-		a{float: none;}
-	}
-}
-
-@media(max-width: $tablet-size){
-	.latest-event-wrapper{
-		margin: $mobile-margin;
-	}
-}
-
-.b-btn-full--register{
-	float: right;
-}
-
-.b-latest-event{
-	overflow: auto;
-	min-width: 20rem;
-	margin-top: -1rem;
-
-	@media(max-width: $mobile-size){
-		margin-top: 0;
-	}
-}
-
-.latest-event{
-	width: 90%;
-	float: left;
-	padding: 1.6rem 0 1.1rem 0;
-	h4{margin: 0;}
-}
-
-.b-latest-event--background{
-	background: $background-one;
-}
-
-.call-to-action-section{
-	max-width: $global-width;
-	margin: 0 auto;
+.intro{
+	padding: 0 1rem;
+	height: 100vh;
+	background-color: $primary-color;
 	text-align: center;
-	overflow: auto;
-	min-height: 26rem;
-	h2{padding: 1rem 0 1rem 0;}
-}
 
-@media(max-width: $tablet-size){
-	.call-to-action-section{
-		margin: $mobile-margin;
-		font-size: 0.9em;
+	.logo{
+		max-width: 26rem;
+		margin-top: 20rem;
+
+		@media(max-height: 500px) //phones tilted sideways
+		{
+			margin-top: 2rem;
+			max-width: 20rem;
+		}
+
+		@media(min-width: $tablet-size){
+			max-width: 35rem;
+		}
+	}
+
+	p{
+		color: $white;
+		margin-top: 2rem;
+
+		@media(max-width: 440px){
+			br{display: none;}
+		}
+		@media(min-width: $tablet-size){
+			margin-top: 5rem;
+		}
 	}
 }
-
-.b-call-to-action{
-	h3{margin-top: 2rem;}
-	p{margin-bottom: 1.5rem;}
-	.b-call-to-action__action-image{max-width: 6.5rem;}
-}
-
-.b-call-to-action:first-of-type{
-	h3{margin-top: 2.65rem;}
-	.b-call-to-action__action-image{max-width: 8rem;}
-} 
 
 .about-section{
-	background: $background-one;
-	overflow: auto;
-	min-height: 25rem;
-}
-
-.about-wrapper{
-	max-width: $global-width;
-	margin: 0 auto;
 	text-align: center;
-	overflow: auto;
-	min-height: 20rem;
+	background-color: $background-one;
 
-	@media(max-width: $mobile-size){
-		h3{margin-bottom: 2rem;}
-	}
-}
-
-@media(max-width: $tablet-size){
-	.about-wrapper{
-		margin: $mobile-margin;
-	}
-}
-
-.b-mission-statement{
-	margin-top: 1.5rem;
-	.b-mission-statement__icon{
-		max-width: 5rem; 
-		height: auto;
-		margin-top: -1.5rem;
-		border: 0.5rem solid white;
-		border-radius: 5rem;
-	}
-}
-
-.b-mission-statement--section{
-	background: $white;
-	width: 30%;
-	float: left;
-	border-radius: 0.5rem;
-	padding-bottom: 1rem;
-
-	@media(max-width: $mobile-size){
-		float: none;
-		width: 100%;
-		margin-bottom: 2rem;
-		p{margin: 0 1rem;}
-	}
-}
-
-.b-mission-statement--middle{
-	margin: 1.5rem 3.33%;
-
-	@media(max-width: $mobile-size){
-		margin: 0 0 2rem 0;
-	}
-}
-
-.member-section{
-	background: $background-one;
-	overflow: auto;
-
-	.member-wrapper{
-		max-width: $global-width;
-		margin: 0 auto;
-		text-align: center;
-		overflow: auto;
-
-		h2{
-			padding-bottom: 2rem;
-
-			@media(max-width: $mobile-size){
-				padding-bottom: 0;
-			}
-		}
-	}
-
-	@media(max-width: $tablet-size){
-		.member-wrapper{
-			margin: $mobile-margin;
-		}
-	}
-}
-
-.blog-section{
-	overflow: hidden;
-	min-height: 25rem;
-	position: relative;
-	width: 100%;
-	.background-one{
-		background: $background-one; 
-		min-height: 14rem;
-
-		@media(max-width: $tablet-size){
-	
-			min-height: 20rem;
-		}
-
-		@media(max-width: $mobile-size){
-			min-height: 12rem;
-		}
-	}
-	.background-two{
-		background: $background-two;
-		min-height: 14rem; 
-
-		@media(max-width: $tablet-size){
-			min-height: 24.5rem;
-		}
-
-		@media(max-width: $mobile-size){
-			min-height: 19rem;
-		}
-	}
-	.blog-wrapper{
-		width: $global-width; //ie requires fixed with for centering 
-		margin: 0 auto;
-		background: $white;
-		min-height: 15rem;
-		position: absolute;
-		z-index: 999;
-		top: 20%;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 0 2rem 1rem 2rem;
-		h2{text-align: center;}
-
-		@media(max-width: $tablet-size)
-		{
-			//again screw you IE
-			width: auto;
-			max-width: $global-width;
-		}
-	}
-
-	@media(max-width: $tablet-size)
-	{
-		.blog-wrapper{
-			margin: 0 2rem;
-		}
-	}
-}
-
-.blog-snippet{
-	h4{
-		border-bottom: 1px solid $lightGrey;
-		max-width: 16rem;
-		padding-bottom: 0.5rem;
-	}
-	p:first-of-type{
-		border-bottom: 1px solid $lightGrey;
-		max-width: 16rem;
-		padding-bottom: 2rem;
-	}
-	@media(max-width: $tablet-size){
-		padding-bottom: 2rem;
-		h4, p{margin: 0 auto; max-width: 16rem;}
-	}
-}
-
-.member-carousel{
-	img{max-width: 8rem;}
-}
-
-.selector{
-	float: right;
-	margin-top: 3.5rem;
-	width: 53%;
-	.circle{
-		height: 0.7rem;
-		width: 0.7rem;
-		border-radius: 0.7rem;
-		background: $grey;
-		float: left;
-		margin-left: 0.5rem;
-	}
-	.circle:hover{
-		background: $primary-color;
-		cursor: pointer;
-		transition: all 0.3s ease;  
-	}
-
-	@media(max-width: $mobile-size){
-		margin-top: 0;
-		width: 63%;
-	}
-}
-
-
-.blog-carousel{
-	max-width: $global-width;
-	margin: 0 auto;
-}
-
-@media(max-width: $tablet-size){
-	.blog-carousel{
-		margin: $mobile-margin;
-	}
-}
-
-.chevron{
-	text-align: center;
-	margin-top: 6rem;
-	font-size: 2rem;
-	color: $primary-color;
-
-	@media(max-width: $tablet-size){
+	.illustration{
 		margin-top: 13rem;
-	}
+		padding: 0 4rem;
+		max-width: 30rem;
 
-	@media(max-width: $mobile-size){
-		position: absolute;
-	}
-}
+		@media(min-width: $tablet-size)
+		{
+			max-width: 55rem;
+			margin: 21rem 0 5rem 0;
+		}
 
-.fa-chevron-left{
-	@media(max-width: $mobile-size){
-		left: 0.5rem;
-	}
-}
-
-.fa-chevron-right{
-	@media(max-width: $mobile-size){
-		right: 1rem;
+		@media(min-width: $desktop-size)
+		{
+			max-width: 70rem;
+			margin: 21rem 0 10rem 0;
+		}
 	}
 }
 
-.chevron:hover{
+#about-3{
+	padding-bottom: 2rem;
+}
+
+.service-section{
+	text-align: center;
+	background: $white;
+
+	h1{
+		margin: 3rem 0;
+
+		@media(min-width: $tablet-size)
+		{
+			margin: 5rem 0;
+		}
+	}
+
+	.service-icon{
+		max-width: 6rem;
+
+		@media(max-width: $mobile-size)
+		{
+			float: left;
+		}
+		@media(min-width: $tablet-size)
+		{
+			max-width: 10rem;
+		}
+		@media(min-width: $desktop-size)
+		{
+			max-width: 20rem;
+		}
+	}
+
+	p{
+		padding: 1rem 0;
+
+		@media(min-width: $tablet-size)
+		{
+			font-size: 1.5em;
+		}
+		@media(min-width: $desktop-size)
+		{
+			font-size: 2em;
+			margin-top: 1rem;
+		}
+	}
+
+	.scroll-btn{
+		margin-top: 0;
+
+		@media(min-width: $tablet-size)
+		{
+			margin: 5rem 0;
+		}
+	}
+}
+
+.client-seciton{
+	background-color: $background-one;
+	text-align: center;
+
+	h1{
+		margin: 5rem 0;
+
+		@media(min-width: $desktop-size){
+			margin: 9rem 0 16rem 0;
+		}
+	}
+}
+
+.location-section{
+	text-align: center;
+	h1{
+		margin: 3rem 0;
+	}
+
+	h1{
+		@media(max-width: $mobile-size){
+			text-transform: capitalize;
+		}
+	}
+}
+
+.contact-section{
+	text-align: center;
+	padding-bottom: 10rem;
+
+	#name{
+		margin-bottom: 2rem;
+	}
+	#email{
+		margin-bottom: 2rem;
+	}
+
+	.btn{
+		background-color: $primary-color;
+		color: $white;
+		font-size: 2rem;
+		padding: 1rem 5rem;
+		margin-bottom: 2rem;
+	}
+
+	h1{
+		margin: 3rem 0;
+	}
+
+	.form-control{
+		max-width: 55rem;
+		margin: 0 auto;
+	}
+
+	.contact-container{
+		padding: 0 4rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}
+
+.scroll-btn{
+	margin-top: 5rem;
+	max-width: 5rem;
 	cursor: pointer;
-	color: $primary-hover;
-	transition: all 0.3s ease;
+	@media(min-width: $tablet-size){
+		max-width: 6rem;
+	}
+
+	@media(min-width: $desktop-size)
+	{
+		max-width: 8rem;
+	}
+}
+
+
+
+.googleMapContent{
+	p{font-size: 1em;}
+}
+
+.small-text{
+	font-size: 1em;
 }

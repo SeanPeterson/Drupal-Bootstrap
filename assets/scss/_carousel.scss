@@ -1,0 +1,57 @@
+.carousel-control {
+  padding-top:10%;
+  width:5%;
+
+  @media(max-width: $mobile-size){
+    width: 0;
+  }
+}
+
+.carousel-container{
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.well{
+  border: 0px;
+  background-color: $background-one;
+  box-shadow: none;
+}
+
+.carousel-control{
+  background: $background-one;
+  opacity: 1;
+  padding-top: 2%;
+  font-size: 6rem;
+  color: #AFB4B5;
+}
+
+.carousel-control.left{
+  background-image: initial;
+}
+.carousel-control.right{
+  background-image: initial;
+}
+
+.thumbnail{
+  background-color: $background-one;
+  border: 0px;
+}
+
+.active-all{
+  display: block;
+}
+
+.active-medium{
+  display: none;
+  @media(min-width: $tablet-size){
+    display: block;
+  }
+}
+
+.client-logo{
+  max-width: 17rem !important;
+}

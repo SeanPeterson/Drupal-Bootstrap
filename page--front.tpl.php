@@ -73,126 +73,107 @@
  */
 ?>
 
-<header class="b-header">
-  <div class="b-nav b-nav--header">
-    <div class="b-nav__nav-left">
-      <a href="#"><img src="<?php echo path_to_theme(); ?>/assets/images/OpenCharity.png" alt="company logo" /></a>
+<section class="intro">
+    <div class="content">
+      <img class="logo" src="<?php echo path_to_theme(); ?>/assets/images/logo.png" alt="company logo" />
+      <p>A team of self confessed geeks who are <br>all about great digital design</p>
+      <img class="scroll-btn" id="scroll-btn-1" src="<?php echo path_to_theme(); ?>/assets/images/btn-1.png" alt="scroll button" />
     </div>
-    <div class="b-nav__nav-right">
-      <ul class="b-nav__nav-elements">
-        <li><a href="#">About Open Charity</a></li>
-        <li><a href="#">The Blog</a></li>
-        <li><a href="#">Join Us</a></li>
-      </ul>
+</section>
+<a href="about-1" id="about-1"></a>
+<section class="about-section scroll">
+  <img class="illustration" src="<?php echo path_to_theme(); ?>/assets/images/about-1.png" alt="illustration" />
+  <p>Some agencies love <span class="primary-color">design</span>, but don't know how to build</p>
+  <img class="scroll-btn" id="scroll-btn-2" src="<?php echo path_to_theme(); ?>/assets/images/btn-2.png" alt="scroll button" />
+</section>
+<section class="about-section" id="about-2">
+  <img class="illustration" src="<?php echo path_to_theme(); ?>/assets/images/about-2.png" alt="illustration" />
+  <p>Some agencies know how to <span class="primary-color">build</span> but can't do design</p>
+  <img class="scroll-btn" id="scroll-btn-3"  src="<?php echo path_to_theme(); ?>/assets/images/btn-2.png" alt="scroll button" />
+</section>
+<section class="about-section" id="about-3">
+  <img class="illustration" src="<?php echo path_to_theme(); ?>/assets/images/about-3.png" alt="illustration" />
+  <p>We love <span class="primary-color">both</span></p>
+  <a href="#"><img class="scroll-btn" id="scroll-btn-4" src="<?php echo path_to_theme(); ?>/assets/images/btn-2.png" alt="scroll button" /></a>
+</section>
+<section class="service-section" id="service">
+  <div class="container">
+    <h1>Services</h1>
+    <div class="row">
+      <div class="col-sm-12 col-md-3 clear">
+        <img class="service-icon" src="<?php echo path_to_theme(); ?>/assets/images/service-1.png" alt="service icon" />
+        <p>Web Development</p>
+      </div>
+      <div class="col-sm-12 col-md-3 clear">
+        <img class="service-icon" src="<?php echo path_to_theme(); ?>/assets/images/service-2.png" alt="service icon" />
+        <p>Design</p>
+      </div>
+      <div class="col-sm-12 col-md-3 clear">
+        <img class="service-icon" src="<?php echo path_to_theme(); ?>/assets/images/service-3.png" alt="service icon" />
+        <p>Branding</p>
+      </div>
+      <div class="col-sm-12 col-md-3 clear">
+        <img class="service-icon" src="<?php echo path_to_theme(); ?>/assets/images/service-4.png" alt="service icon" />
+        <p>UX Research</p>
+      </div>
     </div>
+    <a href="#about-1"><img class="scroll-btn" id="scroll-btn-5" src="<?php echo path_to_theme(); ?>/assets/images/btn-3.png" alt="scroll button" /></a>
   </div>
-</header>
+</section>
+<section class="client-seciton" id="client">
+  <div class="carousel-container">
+    <div class="col-md-12">
+         <h1>Clients</h1>
 
-<div class="container">
-<div class="row">
-  <div class="col-sm-6">col-8</div>
-  <div class="col-4">col-4</div>
-</div>
-</div>
+        <div class="well">
+            <div id="myCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner" id="itemList">
+                    <div class="item active" id="active-carousel">
+                        <div class="row"></div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item" id="inactive-carousel">
+                        <div class="row"></div>
+                        <!--/row-->
+                    </div>
+                </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
 
-
-<?php if($messages): ?>
-<div id="messages">
-  <div class="section clearfix">
-    <?php print $messages; ?>
-  </div>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+    <img class="scroll-btn" id="scroll-btn-6" src="<?php echo path_to_theme(); ?>/assets/images/btn-3.png" alt="scroll button" />
 </div>
-<?php endif; ?>
-<section class="b-hero b-hero--background">
-  <div class="b-hero__hero-content">
-    <h1>SHARING IDEAS FOR CHARITIES</h1>
-    <p>Many charities' goals are similar, as is the functionality we require, but little <br> shared working takes place.</p>
-    <p>By working together, driving shared areas of interest and influencing open source developments we can <br> bring efficiencies, improve the digital experience for our users, and have great impact.</p>
-    <p>Together we can make a bigger diference.</p>
+</section>
+<section class="location-section" id="location">
+  <h1><span class="small-hide">How to</span> find us</h1>
+  <div id="map"></div>
+  <img class="scroll-btn" id="scroll-btn-7" src="<?php echo path_to_theme(); ?>/assets/images/btn-2.png" alt="scroll button" />
+</section>
+<section class="contact-section">
+  <div class="contact-container">
+    <h1>Contact</h1>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+        <textarea class="form-control" placeholder="Message" rows="8"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">Send Message!</button>
+    </form>
+    <p class="small-hide">Or phone on: 01923 220121</p>
+    <p class="small-text medium-hide"><i class="fa fa-phone" aria-hidden="true"></i> 01923 220121</p>
+    <p class="small-text medium-hide"><i class="fa fa-envelope" aria-hidden="true"></i> info@compucorp.co.uk</p>
   </div>
 </section>
-<section class="b-latest-event b-latest-event--background">
-  <div class="latest-event-wrapper">
-    <div class="large-8">
-      <?php print render($page['event']); ?>
-    </div>
-    <a class="b-btn-full b-btn-full--register" href="#">REGISTER</a>
-  </div>
-</section>
-<section class="call-to-action-section">
-  <h2>GET INVOLVED</h2>
-  <div class="b-call-to-action large-3">
-    <img class="b-call-to-action__action-image" src="<?php echo path_to_theme(); ?>/assets/images/mettings.png" alt="call to action icon" />
-    <h3>WE DO MEETINGS</h3>
-    <p>We organize our meetings through the OpenCharity<br>MeetUp group</p>
-    <a class="b-btn" href="#">MEETUP GROUP</a>
-  </div>
-  <div class="b-call-to-action large-3">
-    <img class="b-call-to-action__action-image" src="<?php echo path_to_theme(); ?>/assets/images/communicate.png" alt="call to action icon" />
-    <h3>WE COMMUNICATE</h3>
-    <p>OpenCharity have a slack group for<br>daily communication</p>
-    <a class="b-btn" href="#">SLACK GROUP</a>
-  </div>
-  <div class="b-call-to-action large-3">
-    <img class="b-call-to-action__action-image" src="<?php echo path_to_theme(); ?>/assets/images/collaberate.png" alt="call to action icon" />
-    <h3>WE COLLABERATE</h3>
-    <p>We have a Wiki group set up to share tools<br>and documents</p>
-    <a class="b-btn" href="#">WIKI GROUP</a>
-  </div>
-</section>
-<section class="about-section">
-  <div class="about-wrapper">
-    <h2>OUR MISSION</h2>
-    <p>Charities and Partners collaberating and sharing open solutions and ideas to create value in the digital space.</p>
-    <h3>If you are a charity or a supplier, we are ready to welcome you.</h3>
-    <div class="b-mission-statement b-mission-statement--section">
-      <img class="b-mission-statement__icon" src="<?php echo path_to_theme(); ?>/assets/images/bulb.png" alt="mission icon" />
-      <h4 class="primary-color">We help charities</h4>
-      <p>share knowledge and working practice to make<br>the best technology choices.</p>
-    </div>
-    <div class="b-mission-statement b-mission-statement--section b-mission-statement--middle">
-      <img class="b-mission-statement__icon" src="<?php echo path_to_theme(); ?>/assets/images/people.png" alt="mission icon" />
-      <h4 class="primary-color">We help charities</h4>
-      <p>share knowledge and working practice to make<br>the best technology choices.</p>
-    </div>
-    <div class="b-mission-statement b-mission-statement--section">
-      <img class="b-mission-statement__icon" src="<?php echo path_to_theme(); ?>/assets/images/thumb.png" alt="mission icon" />
-      <h4 class="primary-color">We help charities</h4>
-      <p>share knowledge and working practice to make<br>the best technology choices.</p>
-    </div>
-  </div>
-</section>
-<div class="divider">
-<hr size="0">
-</div>
-<section class="member-section">
-  <div class="member-wrapper">
-    <h2>Our Members</h2>
-    <?php print render($page['members']); ?>
-  </div>
-</section>
-<section class="blog-section">
-<div class="selector"><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>
-  <div class="background-one"></div>
-  <div class="background-two"></div>
-  <div class="blog-wrapper">
-    <h2>BLOG</h2>
-    <div class="blog-carousel">
-        <i class="fa fa-chevron-left chevron column-1-12" aria-hidden="true"></i>
-        <?php print render($page['blog']); ?>
-        <i class="fa fa-chevron-right chevron column-1-12" aria-hidden="true"></i>
-    </div>
-  </div>
-</section>
-<footer class="b-footer">
-  <div class="b-footer--center">
-    <ul class="b-share-buttons b-share-buttons--horizontal">
-      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
-  <div class="b-footer--center">
-    <p>This site was built as a collaberation between <a class="b-footer__signature">Manifesto Digital</a> and <a class="b-footer__signature">Compucorp</a></p>
-  </div>
-</footer>
+<div id="contact"></div>
+<!--FOOTER-->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIJJALpfXtBUS-XA_r6zk_SDEGrSLRyfc&callback=initMap">
+</script>
